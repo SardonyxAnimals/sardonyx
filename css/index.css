@@ -358,3 +358,51 @@ body {
         left: -400%;
     }
 }
+
+
+/** Tabela **/
+table{
+    margin: 50px;
+    width: 800px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+ 
+    
+    
+
+}
+
+caption{
+    font-weight: bold ;
+    
+    color: black;
+    font-size:25px;
+    background-color: #7dc9e0;
+    padding: 5px;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+th,td{
+    border: 2px solid black;
+   
+}
+tr{
+    color: black;
+}
+
+thead{
+    font-size: 15px;
+    color: black;
+    background-color:#7dc9e0;
+    text-align: center;
+}
+tbody{
+    text-align: justify;
+    vertical-align: middle;
+}
+
+tbody>tr:nth-child(even){
+    background-color: #7dc9e0;
+    
+}
