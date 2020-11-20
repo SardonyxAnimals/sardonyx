@@ -7,7 +7,7 @@ Caso queria verificar o site no github pages, <a href="https://sardonyxanimals.g
 <h1>Componentes da Sardonyx</h1>
 <ul>
   <li><a href="https://github.com/Failesmen/" target="_blank">Failesmen Evandro</a></li>
-  <li><a href="https://github.com/Fernanda/" target="_blank">Fernanda Almeida</a></li>
+  <li><a href="https://github.com/Cx-nanda" target="_blank">Fernanda Almeida</a></li>
   <li><a href="https://github.com/learncodesarah/" target="_blank">Sarah Cavalcante</a></li>
   <li><a href="https://github.com/Karla/ " target="_blank">Karla Cristina</a></li>
 </ul>
