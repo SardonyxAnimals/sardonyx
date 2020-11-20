@@ -385,6 +385,8 @@ caption{
 }
 th,td{
     border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
    
 }
 tr{
@@ -395,14 +397,16 @@ thead{
     font-size: 15px;
     color: black;
     background-color:#7dc9e0;
-    text-align: center;
+   
 }
-tbody{
-    text-align: justify;
-    vertical-align: middle;
-}
+
 
 tbody>tr:nth-child(even){
     background-color: #7dc9e0;
     
 }
+tbody>tr:nth-child(odd){
+    background-color:#c1e6f1;
+    
+}
+
