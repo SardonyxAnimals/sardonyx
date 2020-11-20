@@ -8,9 +8,11 @@ Caso queria verificar o site no github pages, clique aqui.
 
 
 
-Componentes do projeto: <br>
-Failesmen Evandro - https://github.com/Failesmen/ <br>
-Fernanda Almeida - https://github.com/Fernanda/ <br>
-Sarah Paz - https://github.com/learncodesarah/ <br>
-Karla Cristina - https://github.com/Karla/ <br>
+<h3>Componentes da Sardonyx:</h3>
+<ul>
+  <li><a href="https://github.com/Failesmen/">Failesmen Evandro</a><li>
+  <li><a href="https://github.com/Fernanda/">Fernanda Almeida</a><li>
+  <li><a href="https://github.com/learncodesarah/">Sarah Cavalcante</a><li>
+  <li><a href="https://github.com/Karla/ ">Karla Cristina</a><li>
+ </ul>
 
