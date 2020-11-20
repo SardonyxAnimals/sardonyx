@@ -1,8 +1,10 @@
 table{
+    margin: 50px;
     width: 800px;
     border: 2px solid black;
     border-collapse: collapse;
     border-radius: 20px;
+    padding: 20px 20px;
 
 }
 
@@ -19,4 +21,7 @@ thead{
 
 tbody>tr:nth-child(even){
     background-color: #7dc9e0;
+}
+tbody>tr:nth-child(opp){
+    background-color:black;
 }
