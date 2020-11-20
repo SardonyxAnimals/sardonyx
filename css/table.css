@@ -1,0 +1,22 @@
+table{
+    width: 800px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 20px;
+
+}
+
+th,td{
+    border: 2px solid black;
+   
+}
+
+thead{
+    color: black;
+    background-color:#7dc9e0;
+    text-align: center;
+}
+
+tbody>tr:nth-child(even){
+    background-color: #7dc9e0;
+}
