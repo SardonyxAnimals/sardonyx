@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato | Sardonyx</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/contato.css" />
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" class="contato-pagina">
         <div class="tamanho_header">
             <nav class="navegacao">
                 <input type="checkbox" id="check">
@@ -26,17 +26,36 @@
                     <a href="index.html"><img src="img/loginha.jpg" alt="Logo"></a>
                 </div>
                 <ul>
-                    <!-- Falta implementar a parte das categorias(Dropdown) -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Categorias</a></li>
+
+                    <div class="dropdown">
+                        <li><a href="#">Categorias</a></li>
+                        <div class="dropdown-content">
+                            <a href="anfibios.html">Anfíbios</a>
+                            <a href="aves.html">Aves</a>
+                            <a href="mamiferos.html">Mamíferos</a>
+                            <a href="repteis.html">Répteis</a>
+                        </div>
+                    </div>
+
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a class="active">Contato</a></li>
+                    <li><a class="active" href="#">Contato</a></li>
                 </ul>
             </nav>
             <section></section>
         </div>
     </header>
     <main>
+        <div class="formulario">
+            <form action="#" class="form-contato" method="post" tabindex="1">
+                <input type="text" class="form-contato-input" name="nome" placeholder="Nome" required />
+                <input type="email" class="form-contato-input" name="email" placeholder="Email" required />
+                <input type="tel" class="form-contato-input" name="tel" placeholder="Telefone" />
+                <textarea class="form-contato-area" name="conteudo" placeholder="Mensagem..." required></textarea>
+                <button type="submit" class="form-contato-botao">Enviar</button>
+            </form>
+        </div>
+
 
     </main>
     <footer id="footer">
@@ -44,7 +63,7 @@
             <div class="linha">
                 <div class="coluna_geral coluna-lugar-1 coluna-area-3">
                     <p class="rodape">
-                        <a href=""><img src="" alt="Logo da Sardonyx"></a>
+                        <a href=""><img src="img/logo_footer_teste.png" alt="Logo da Sardonyx"></a>
                     </p>
                     <p class="rodape">Iremos ver o que por nesse parágrafo. Por enquanto, estamos pensando...</p>
                 </div>
@@ -53,10 +72,10 @@
                     <div class="nav_rodape">
                         <nav>
                             <ul>
-                                <li><a class="rodape" href="#">Home</a></li>
-                                <li><a class="rodape active" href="#">Categorias</a></li>
+                                <li><a class="rodape" href="index.html">Home</a></li>
+                                <li><a class="rodape" href="#">Categorias</a></li>
                                 <li><a class="rodape" href="sobre.html">Sobre</a></li>
-                                <li><a class="rodape" href="contato.html">Contato</a></li>
+                                <li><a class="rodape" href="#">Contato</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -72,6 +91,9 @@
     <div id="copyright">
         &copy; Sardonyx - 2020 - Todos os direitos reservados
     </div>
+    <p>Teste</p>
+</body>
+
 
 
 </html>
