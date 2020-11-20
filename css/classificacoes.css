@@ -1,0 +1,36 @@
+.topo {
+    background-color: lightblue;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    border-style: inset;
+}
+
+.topo p {
+    font-size: large;
+    text-align: justify;
+    color: black;
+}
+
+.nomes img {
+    /* imagens */
+    width: 5%;
+    float: initial;
+    border: 2px inset;
+}
+
+.nomes ul {
+    list-style-type: none;
+    font-size: 25px;
+    color: rgb(34, 139, 180);
+    padding: 0;
+    margin: 0;
+}
+
+.nomes li {
+    line-height: 2.5em;
+}
+
+h1.titulos {
+    color: black;
+}
