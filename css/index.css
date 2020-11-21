@@ -317,6 +317,10 @@
             float: left;
         }
         
+        p.rodape img {
+            margin-bottom: -20px;
+        }
+        
         @keyframes slider {
             0% {
                 left: 0;

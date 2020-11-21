@@ -16,38 +16,37 @@
 </head>
 
 <body>
-    
-    <header>
-        <div class="tamanho_header">
-            <nav class="navegacao">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
+    <header id="header">
+        <div class="container">
+            <div class="linha">
+                <div id="logo" class="coluna_geral coluna-area-3">
+                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
+                </div>
+                <nav class="navegacao">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
           </label>
-                <div id="logo">
-                    <a href="index.html"><img src="img/loginha.jpg" alt="Logo"></a>
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-
-                    <div class="dropdown">
-                        <li><a class="active">Categorias</a></li>
-                        <div class="dropdown-content">
-                            <a class="active">Anfíbios</a>
-                            <a href="aves.html">Aves</a>
-                            <a href="mamiferos.html">Mamíferos</a>
-                            <a href="repteis.html">Répteis</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <div class="dropdown">
+                            <li><a href="#" class="active">Categorias</a></li>
+                            <div class="dropdown-content">
+                                <a href="anfibios.html">Anfíbios</a>
+                                <a href="aves.html">Aves</a>
+                                <a href="mamiferos.html">Mamíferos</a>
+                                <a href="repteis.html">Répteis</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-            <section></section>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <section></section>
+            </div>
         </div>
     </header>
-
     <main class="principal">
         <div class="topo">
             <!--Titulo e descrição da classe-->
@@ -59,7 +58,7 @@
         <div class="nomes">
             <!--Lista de animais de A a Z-->
 
-             <ul>C
+            <ul>C
                 <hr>
                 <li><img src="img/imgs_categorias/anfibios/CobraCega.jpg" alt="Cobra-Cega"> CobraCega</li>
             </ul>
@@ -78,7 +77,7 @@
 
                 <li><img src="img/imgs_categorias/anfibios/rhinella-lescurei.jpg" alt="rhinella-lescurei"> rhinella-lescurei</li>
             </ul>
-            
+
             <ul>S
                 <hr>
                 <li><img src="img/imgs_categorias/anfibios/sapo-de-vidro.png" alt="Sapo-de-vidro"> Sapo-de-vidro</li>
@@ -93,21 +92,21 @@
         </div>
     </main>
     <footer id="footer">
-        <div class="rodape_tamanho">
+        <div class="container">
             <div class="linha">
                 <div class="coluna_geral coluna-lugar-1 coluna-area-3">
                     <p class="rodape">
-                        <a href=""><img src="" alt="Logo da Sardonyx"></a>
+                        <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape">Iremos ver o que por nesse parágrafo. Por enquanto, estamos pensando...</p>
+                    <p class="rodape alinhar">Lorem ipsum malesuada platea lacus libero, blandit feugiat orci. potenti vestibulum taciti posuere iaculis neque augue mauris, phasellus etiam conubia curabitur etiam aptent, id turpis metus justo enim ut. .</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
                     <div class="nav_rodape">
                         <nav>
                             <ul>
-                                <li><a class="rodape" href="#">Home</a></li>
-                                <li><a class="rodape" href="#">Categorias</a></li>
+                                <li><a class="rodape" href="#top">Home</a></li>
+                                <li><a class="rodape" href="#top">Categorias</a></li>
                                 <li><a class="rodape" href="sobre.html">Sobre</a></li>
                                 <li><a class="rodape" href="contato.html">Contato</a></li>
                             </ul>
@@ -125,6 +124,7 @@
     <div id="copyright">
         &copy; Sardonyx - 2020 - Todos os direitos reservados
     </div>
+
 </body>
 
 </html>
