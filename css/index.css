@@ -284,6 +284,10 @@
             vertical-align: middle
         }
         
+        p.alinhar {
+            text-align: justify;
+        }
+        
         #copyright {
             text-align: center;
             background-color: rgb(70, 130, 180);
