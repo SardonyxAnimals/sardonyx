@@ -10,5 +10,6 @@ Caso queria verificar o site no github pages, <a href="https://sardonyxanimals.g
   <li><a href="https://github.com/Cx-nanda" target="_blank">Fernanda Almeida</a></li>
   <li><a href="https://github.com/learncodesarah/" target="_blank">Sarah Cavalcante</a></li>
   <li><a href="https://github.com/Karla/ " target="_blank">Karla Cristina</a></li>
+  <li><a href="https://github.com/juninho/ " target="_blank">José Cristovão</a></li>
 </ul>
 
