@@ -350,3 +350,48 @@
                 left: -400%;
             }
         }
+        /* tabela (nao responsiva)*/
+        table{
+            margin: 50px;
+            width: 850px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        
+        
+        
+        
+        }
+        
+        caption{
+            font-weight: bold ;
+        
+            color: black;
+            font-size:25px;
+            background-color: #7dc9e0;
+            padding: 5px;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+        th,td{
+            border: 2px solid black;
+            text-align: center;
+            font-size: 18px;
+        
+        }
+        tr{
+            color: black;
+        }
+        
+        thead{
+            font-size: 15px;
+            color: black;
+            background-color:#7dc9e0;
+           
+        }
+      
+        
+        tbody>tr:nth-child(even){
+            background-color: #7dc9e0;
+        
+        }
