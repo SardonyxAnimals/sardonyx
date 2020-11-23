@@ -4,6 +4,9 @@ Este projeto está sendo realizado em virtude da composição de notas do EAD, d
 
 Caso queria verificar o site no github pages, <a href="https://sardonyxanimals.github.io/sardonyx/" target="_blank">acesse aqui</a>.
 
+<h1>Entregas do projeto</h1>
+Para verificar cada entrega feita e seus respectivos códigos de implementação, <a href="https://github.com/SardonyxAnimals/sardonyx/wiki" target="_blank">clique aqui</a>.
+
 <h1>Componentes da Sardonyx</h1>
 <ul>
   <li><a href="https://github.com/Failesmen/" target="_blank">Failesmen Evandro</a></li>
