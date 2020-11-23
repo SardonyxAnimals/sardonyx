@@ -4,6 +4,10 @@
 
 /* Css do formulario classe formulário */
 
+body {
+    background-image: url(fundo_legal.jpeg);
+}
+
 h1,
 h2 {
     font-size: 2em;
@@ -24,7 +28,7 @@ main {
     color: black;
     font-family: 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    background: url('img/fundo_legais.jpeg')
+    background: url('img/fundo_legal.jpeg')
 }
 
 .sard {
