@@ -1,59 +1,65 @@
 /* Css do formulario classe formulário */
+
 @import url('index.css');
+
 /* Css do formulario classe formulário */
 
-
-h1,h2 { font-size: 2em; margin:0 5px; font-style: italic; opacity: 85%; color: black; }
-p{ font-size: 18px;
-
+h1,
+h2 {
+    font-size: 2em;
+    margin: 0 5px;
+    font-style: italic;
+    opacity: 85%;
+    color: black;
 }
 
-main { width: 80%; 
+p.componente {
+    font-size: 18px;
+    text-align: justify;
+}
+
+main {
+    width: 80%;
     margin-left: 10%;
-    color: black; 
-    font-family: 'Arial Narrow', Arial, sans-serif; 
+    color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     background: url('img/fundo_legais.jpeg')
-   
 }
 
-.sard{
+.sard {
     background-color: rgb(145, 206, 245);
     padding: 20px;
     margin: 50px 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px #666;
-    
 }
 
-.nos{
-    background-color:  rgb(145, 206, 245);
+.nos {
+    background-color: rgb(145, 206, 245);
     padding: 20px;
     margin: 50px 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px #666;
-
 }
 
-.cont{
+.cont {
     background-color: rgb(145, 206, 245);
     padding: 20px;
     margin: 50px 10px;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 0 0 10px #666;
-
 }
 
-p>a{
+p>a {
     color: #FFF;
-    font-style: unset; 
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    font-style: unset;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
     font-size: 20px;
     text-align: center;
     padding-top: 7px;
     text-decoration: none;
     border-radius: 0px 20px 0px 20px;
     z-index: 2;
-
 }
