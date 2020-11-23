@@ -28,7 +28,6 @@ main {
     color: black;
     font-family: 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    background: url('img/fundo_legal.jpeg')
 }
 
 .sard {
@@ -64,6 +63,5 @@ p>a {
     text-align: center;
     padding-top: 7px;
     text-decoration: none;
-    border-radius: 0px 20px 0px 20px;
-    z-index: 2;
+ 
 }
