@@ -34,3 +34,43 @@
 h1.titulos {
     color: black;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans';
+    background: #f4f4f4;
+    font-size: 18px;
+    font-weight: 100;
+    color: #000;
+}
+
+#testinho a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#testinho a {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    color: #fff;
+    background: #42adc0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    padding-top: 10px;
+    margin: 0 4px 4px 0;
+    padding-top: 5px;
+}
