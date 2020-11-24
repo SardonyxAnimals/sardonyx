@@ -5,7 +5,7 @@
 /* Css do formulario classe formulário */
 
 body {
-    background-image: url('../img/fundo_legal.jpeg');
+    background-image: url('../img/img_sobre/fundo_legal.jpeg');
 }
 
 h1,
@@ -63,5 +63,4 @@ p>a {
     text-align: center;
     padding-top: 7px;
     text-decoration: none;
- 
 }
