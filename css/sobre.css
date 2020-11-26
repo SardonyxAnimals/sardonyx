@@ -8,55 +8,69 @@ body {
     background-image: url('../img/img_sobre/fundo_legal.jpeg');
 }
 
-h1,
+main {
+    width: 100%;
+    color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#sard {
+    width: 100%;
+    background-color: rgb(220, 233, 241);
+    opacity: 0.9;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #666;
+}
+
+.textsard{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+
+.nos {
+    display: inline-block;
+    width: 40%;
+    background-color: rgb(182, 224, 250);
+    padding: 15px;
+    margin: 40px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #666;
+}
+
+.cont{
+    display: inline-block;
+    width: 40%;
+    background-color: rgb(182, 224, 250);
+    padding: 50px;
+    margin: 40px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #666;
+
+}
+
 h2 {
     font-size: 2em;
     margin: 0 5px;
     font-style: italic;
-    opacity: 85%;
+    opacity: 95%;
     color: black;
 }
 
 p.componente {
     font-size: 18px;
     text-align: justify;
-}
-
-main {
-    width: 80%;
-    margin-left: 10%;
-    color: black;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.sard {
-    background-color: rgb(145, 206, 245);
-    padding: 20px;
-    margin: 50px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #666;
-}
-
-.nos {
-    background-color: rgb(145, 206, 245);
-    padding: 20px;
-    margin: 50px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #666;
-}
-
-.cont {
-    background-color: rgb(145, 206, 245);
-    padding: 20px;
-    margin: 50px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 0 10px #666;
+    font-weight: 600;
 }
 
 p>a {
-    color: #FFF;
+    color:rgb(246, 244, 250);
     font-style: unset;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
     font-size: 20px;
