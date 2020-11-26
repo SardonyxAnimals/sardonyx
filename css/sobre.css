@@ -15,7 +15,7 @@ main {
     text-align: center;
 }
 
-#sard {
+.sard {
     width: 100%;
     background-color: rgb(220, 233, 241);
     opacity: 0.9;
@@ -23,6 +23,7 @@ main {
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 10px #666;
+   
 }
 
 .textsard{
@@ -35,9 +36,9 @@ main {
 .nos {
     display: inline-block;
     width: 40%;
-    background-color: rgb(182, 224, 250);
+    background-color: rgb(220, 233, 241);
+    opacity: 0.9;
     padding: 15px;
-    margin: 40px 10px;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 0 0 10px #666;
@@ -46,35 +47,48 @@ main {
 .cont{
     display: inline-block;
     width: 40%;
-    background-color: rgb(182, 224, 250);
-    padding: 50px;
-    margin: 40px 10px;
+    background-color: rgb(220, 233, 241);
+    opacity: 0.9;
+    padding: 15px;
     border-radius: 5px;
     text-decoration: none;
     box-shadow: 0 0 10px #666;
-
+    margin: 50px 10px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 5px;
-    font-style: italic;
-    opacity: 95%;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
 }
 
 p.componente {
-    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     text-align: justify;
-    font-weight: 600;
+    
 }
 
-p>a {
-    color:rgb(246, 244, 250);
-    font-style: unset;
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+a.componente{
+    color:rgb(12, 12, 133);
+    font-weight: bold;
     font-size: 20px;
-    text-align: center;
     padding-top: 7px;
     text-decoration: none;
 }
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+.nos>ul{
+    text-align: left;
+    color:rgb(12, 12, 133);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
