@@ -70,25 +70,28 @@ p.componente {
     
 }
 
-a.componente{
+p.componente a{
     color:rgb(12, 12, 133);
     font-weight: bold;
     font-size: 20px;
-    padding-top: 7px;
-    text-decoration: none;
+    
 }
 
-a:hover{
-    text-decoration: underline;
-
-}
-
-.nos>ul{
-    text-align: left;
+.nos ul a{
     color:rgb(12, 12, 133);
     font-weight: bold;
     font-size: 18px;
 }
+
+.nos ul{
+    text-align: left;
+}
+
+p.componente a:hover,.nos ul a:hover{
+    text-decoration: underline;
+
+}
+
 
 
 
