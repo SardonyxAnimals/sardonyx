@@ -12,6 +12,16 @@
             margin: 0;
             padding: 0;
         }
+        /* cores bonitinhas - depois alterar para
+        as cores do layout */
+        
+         :root {
+            --cor0: #ff0000;
+            --cor1: #fffb00;
+            --cor2: #00ff22;
+            --cor3: #2600ff;
+            --cor4: #f700ff;
+        }
         
         header {
             position: relative;
@@ -66,10 +76,9 @@
         #logo {
             position: absolute;
             width: 60px;
-            top: -36px;
-            bottom: 0px;
-            left: -80px;
-            max-width: 100px;
+            top: 10px;
+            bottom: 50px;
+            margin-left: 120px;
         }
         
         #logo img {
@@ -77,8 +86,9 @@
             line-height: 80px;
             padding: 0 0px;
             font-weight: bold;
-            min-width: 400px;
-            max-width: 250px;
+            min-width: 100px;
+            max-width: 150px;
+            margin-top: 5px;
         }
         
         .navegacao {
@@ -381,9 +391,11 @@
             #logo img {
                 font-size: 30px;
                 margin-bottom: 20px;
+                max-width: 125px;
             }
             #logo {
-                left: -130px;
+                left: -100px;
+                top: 25px;
             }
             #header,
             #header nav {
