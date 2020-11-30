@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre | Sardonyx</title>
     <link rel="stylesheet" type="text/css" href="css/sobre.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+      const img = document.querySelector("img");
+      const icons = document.querySelector(".icons");
+      img.onclick = function() {
+          this.classList.toggle("active");
+          icons.classList.toggle("active");
+      }
+    </script>
 
 </head>
 
@@ -46,36 +56,186 @@
         </div>
     </header>
     <main>
+
+        <!-- primeira parte que fala sobre sardonyx -->
         <div class="sard">
-            <div class="textsard">
+        <img class="imagemsard" src="img/img_sobre/fundosard.png">
+          <div class="textsard"></div>
                 <h2>SOBRE O SARDONYX:</h2>
                 <p class="componente">O Sardonyx é um site informativo e de ilustração, sem fins lucrativos. Visamos explorar o mundo animail; suas espécies, seus cuidados, as leis que os proteje e muito mais. Nosso site é destinado a todos que se interessam em conhecer os mais
                 variados bichos. Repositório da Sardonyx no <a href="https://github.com/SardonyxAnimals/sardonyx"  target="_blank">Github</a>
-                </p>
-            </div>
+                </p> 
+          </div>
         </div>
 
+        <div class="iconedois">
+            <i class="fas fa-users"></i>
+        </div>
         <div class="nos">
+            <!-- segunda parte, que fala sobre nós -->
             <h2>QUEM SOMOS?</h2>
             <p class="componente">Somos uma equipe de 5 estudantes do Instituto Federal de Alagoas - campus Maceió, cursando informática para internet. Desenvolvemos o Sardonyx para um projeto da matéria de Programação Web. Pretendemos continuar mantendo o site ativo mesmo
-                após todas as entregas. Link dos estudantes no github: 
-                <ul>
-                    <li><a href="https://github.com/Failesmen" target="_blank">Failesmen Evandro</a></li>
-                    <li><a href="https://github.com/Cx-nanda" target="_blank">Fernanda Almeida</a> </li>
-                    <li><a href="https://github.com/learncodesarah" target="_blank">Sarah Cavalcante</a></li>           
-                    <li><a href="https://github.com/karlaaraujo/" target="_blank">Karla Araujo</a></li>
-                    <li><a href="https://github.com/" target="_blank">José Cristovão</a></li>
-                </ul>
+                após todas as entregas.
             </p>
-        </div>
+            <!-- aqui se inicia o código dos cards -->
+            <div class="container_cards">
+              <div class="card">
+                  <!-- Fernanda's card -->
+                  <div class="wrapper">
+                      <a href="#"><img src="img/img_sobre/fernanda.jpg" alt=""></a>
+                      <div class="title">Fernanda Almeida</div>
+                      <div class="place">Messias, AL</div>
+                  </div>
+      
+                  <div class="content">
+      
+                      <p>apenas uma camponesa <br></p>
+                      <div class="buttons">
+                          <div class="btn">
+                              <button>Menssagem</button>
+                          </div>
+                          <div class="btn">
+                              <button><a href="https://github.com/Cx-nanda" target="_blank"></a>GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="icons">
+                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <!-- Failesmen's card -->
+                  <div class="wrapper">
+                      <a href="#"><img src="img/img_sobre/failes.jpeg" alt=""></a>
+                      <div class="title">Failesmen Evandro</div>
+                      <div class="place">Marechal Deodoro, AL</div>
+                  </div>
+      
+                  <div class="content">
+      
+                      <p>Contrate um GP para sua festa<br></p>
+                      <div class="buttons">
+                          <div class="btn">
+                              <button>Mensagem</button>
+                          </div>
+                          <div class="btn">
+                              <button><a href="https://github.com/Failesmen" target="_blank"></a>GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="icons">
+                      <li><a href="https://www.facebook.com/Failesmen/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <!-- Sarah's card -->
+                  <div class="wrapper">
+                      <a href="#"><img src="img/img_sobre/sarah.jpeg" alt=""></a>
+                      <div class="title">Sarah<br> Paz</div>
+                      <div class="place">Maceió, AL</div>
+                  </div>
+      
+                  <div class="content">
+      
+                      <p>apenas uma camponesa <br></p>
+                      <div class="buttons">
+                          <div class="btn">
+                              <button>Menssagem</button>
+                          </div>
+                          <div class="btn">
+                              <button><a href="https://github.com/Cx-nanda" target="_blank"></a>GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="icons">
+                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <!-- Karla's card -->
+                  <div class="wrapper">
+                      <a href="#"><img src="fernanda.jpg" alt=""></a>
+                      <div class="title">Karla<br> Cristina</div>
+                      <div class="place">Maceió, AL</div>
+                  </div>
+      
+                  <div class="content">
+      
+                      <p>apenas uma camponesa <br></p>
+                      <div class="buttons">
+                          <div class="btn">
+                              <button>Menssagem</button>
+                          </div>
+                          <div class="btn">
+                              <button><a href="https://github.com/Cx-nanda" target="_blank"></a>GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="icons">
+                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <!-- Junior's card -->
+                  <div class="wrapper">
+                      <a href="#"><img src="fernanda.jpg" alt=""></a>
+                      <div class="title">Junior<br> Cris</div>
+                      <div class="place">Sei não, AL</div>
+                  </div>
+      
+                  <div class="content">
+      
+                      <p>apenas uma camponesa <br></p>
+                      <div class="buttons">
+                          <div class="btn">
+                              <button>Menssagem</button>
+                          </div>
+                          <div class="btn">
+                              <button><a href="https://github.com/Cx-nanda" target="_blank"></a>GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="icons">
+                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                  </div>
+              </div>
+      
+      
+          </div>
+           
+            <!-- aqui encerra a parte dos cards -->
 
+        <div class="iconetres">
+            <i class="far fa-comments"></i>
+        </div>
+        <!-- Terceira parte, onde fala sobre contato -->
         <div class="cont">
             <h2>ENTRE EM CONTATO CONOSCO!</h2>
             <p class="componente">Para reportar algum erro, fazer alguma crítica, sugerir conteúdo e etc. Sintam-se a vontade para nos contatar e dar seu feedback em: <a href="contato.html" >Contato</a></p>
-            <p> UM LOREM IPSUM MAS DEPOIS VAMOS INVENTAR UMA ARTE AÍ</P><P></P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed omnis beatae fugit enim, veritatis assumenda est repellat qui aspernatur atque optio possimus exercitationem accusamus commodi ullam illum dolore, vitae porro? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus architecto quam, et velit dolores sint nobis maxime consequatur nemo quaerat, ad numquam. Sequi possimus odio, ad assumenda impedit eaque dolorum. Lorem ipsum dolor sit</p>
+        
         </div>
 
     </main>
+    <!-- Aqui é o footer -->
     <footer id="footer">
         <div class="container">
             <div class="linha">
