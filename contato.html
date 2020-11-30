@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/formulario.js"></script>
 
 </head>
 
@@ -49,11 +50,11 @@
     <main>
         <div class="formulario">
             <form action="#" class="form-contato" method="post" tabindex="1">
-                <input type="text" class="form-contato-input" name="nome" placeholder="Nome" required />
-                <input type="email" class="form-contato-input" name="email" placeholder="Email" required />
+                <input id="nome_id" type="text" class="form-contato-input" name="nome" placeholder="Nome" required />
+                <input id="email_id" type="email" class="form-contato-input" name="email" placeholder="Email" required />
                 <input type="tel" class="form-contato-input" maxlength="9" name="tel" placeholder="Telefone" />
-                <textarea class="form-contato-area" name="conteudo" placeholder="Mensagem..." required></textarea>
-                <button type="submit" class="form-contato-botao">Enviar</button>
+                <textarea id="msg_id" class="form-contato-area" name="conteudo" placeholder="Mensagem..." required></textarea>
+                <button type="submit" class="form-contato-botao" onclick="validacao()">Enviar</button>
             </form>
         </div>
 
