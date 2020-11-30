@@ -156,80 +156,65 @@
         /*Fim do header*/
         /* Conteúdos dentro do main */
         /* caracteristica da tabela */
-
-        .table{
-            margin:20px;
+        
+        .table {
+            margin: 20px;
         }
         
-        
         table {
-            margin:auto;
+            margin: auto;
             padding: 15px;
             width: 50%;
             border: 1px solid black;
-            border-collapse: collapse;      
+            border-collapse: collapse;
             position: relative;
             font-family: "Opens sans", sans-serif;
             text-align: center;
-            margin-bottom: 55px;      
-        
-           
+            margin-bottom: 55px;
         }
         
-        
-        
-        .tabela thead th{
-           padding: 7px;
-           font-size: 1.5em;
+        .tabela thead th {
+            padding: 7px;
+            font-size: 1.5em;
         }
-           
-          
-        .tabela caption{
-            padding:7px;
+        
+        .tabela caption {
+            padding: 7px;
             font-size: 1.6em;
             font-weight: 700;
             border: 1px solid black;
             border-bottom: 0px;
-            background-color:#7dc9e0;
+            background-color: #7dc9e0;
             border-radius: 3px 3px 0px 0px;
             color: black;
         }
-            
         
-        .tabela tbody tr td{
+        .tabela tbody tr td {
             position: relative;
-            padding: 7px;         
-            
-
-           
-            }
+            padding: 7px;
+        }
         
-        .tabela th,td{
+        .tabela th,
+        td {
             border: 1px solid black;
-           
             background-color: white;
             color: black;
-            
         }
         
-        .tabela tbody>tr:nth-child(even){
+        .tabela tbody>tr:nth-child(even) {
             background-color: rgb(140, 205, 230);
         }
-        .tabela tbody tr td:before {
         
+        .tabela tbody tr td:before {
             display: none;
         }
-        .tabela tbody, thead, caption{
+        
+        .tabela tbody,
+        thead,
+        caption {
             background-color: white;
-            box-shadow: 0px 5px 9px  3px rgba(38, 125, 151, 0.74);
-
-        
-            
+            box-shadow: 0px 5px 9px 3px rgba(38, 125, 151, 0.74);
         }
-         
-    
-       
-        
         /* fim da tabebla*/
         
         .nav_rodape nav ul,
@@ -237,7 +222,6 @@
             list-style: none;
             margin: 0;
             padding: 0;
-           
         }
         /* Imagens slide */
         
@@ -436,69 +420,51 @@
             }
         }
         /* media query da tabela para todos os dispositivos com no máximo 800px*/
-        @media all  and (max-width:800px){
         
-            .tabela tbody tr td{
+        @media all and (max-width:800px) {
+            .tabela tbody tr td {
                 display: block;
                 text-align: center;
                 border: none;
-                
-                
-                
             }
-            table{
+            table {
                 border: none;
                 width: 80%;
             }
-            .tabela tbody tr td :before{
+            .tabela tbody tr td :before {
                 content: "";
                 position: absolute;
-                display: block; 
+                display: block;
                 border: none;
                 text-align: center;
-            
-            
             }
             .tabela .leis {
                 font-size: 18px;
                 font-weight: 700;
-                background-color: rgba(125, 201,224, 0.16) ;
+                background-color: rgba(125, 201, 224, 0.16);
                 border: none;
                 padding: 7px;
-            
             }
-            
             .tabela .leiseven {
                 background-color: rgba(45, 121, 145, 0.185);
                 font-size: 18px;
                 font-weight: 700;
                 border: none;
                 padding: 7px;
-            
-            
             }
-            .tabela thead{
+            .tabela thead {
                 display: none;
                 border: none;
-               
             }
-            table tbody tr{
-               
+            table tbody tr {
                 display: block;
                 border: 1px solid black;
-             
-                             
-               
             }
-            .tabela td,th{
+            .tabela td,
+            th {
                 border: none;
-                
-              
             }
-          
-            .tabela tbody{
-
+            .tabela tbody {
                 border: none;
-              
             }
         }
