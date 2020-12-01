@@ -20,10 +20,15 @@ main {
 }
 
 .nos {
-  width: 70%;
+  width: 100%;
   text-decoration: none;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.textnos{
+  width: 70%;
+  margin: 0 auto;
 }
 
 .cont{
