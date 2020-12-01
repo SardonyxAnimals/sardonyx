@@ -1,15 +1,21 @@
 /* Css do formulario classe formulário */
+
 @import url('index.css');
+
 /* Css do formulario classe formulário */
+
+
 /* importanto fonte usada nos cards */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 main {
-  width: 100%;
-  color: black;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
+    width: 100%;
+    color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
  
 /* Estilo da div sard*/
@@ -22,69 +28,68 @@ main {
 /* fim do estilo da div sard */
 
 .nos {
-  width: 100%;
-  text-decoration: none;
-  margin: 0 auto;
-  margin-top: 30px;
+    width: 100%;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
-.textnos{
-  width: 70%;
-  margin: 0 auto;
+.textnos {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.cont{
-  width: 70%;
-  padding: 15px;
-  text-decoration: none;
-  margin: 0 auto;
+.cont {
+    width: 70%;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0 auto;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin: 0 5px;
-  font-family: sans-serif
-  color: black;
+    font-size: 1.5em;
+    margin: 0 5px;
+    font-family: sans-serif;
+    color: black;
 }
 
 p.componente {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  text-align: justify;
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: justify;
 }
 
-p.componente a{
-  color:rgb(98, 98, 238);
-  font-weight: bold;
-  font-size: 20px;
-    
+p.componente a {
+    color: rgb(98, 98, 238);
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.nos ul a{
-  color:rgb(98, 98, 238);
-  font-weight: bold;
-  font-size: 18px;
+.nos ul a {
+    color: rgb(98, 98, 238);
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.nos ul{
-  text-align: left;
+.nos ul {
+    text-align: left;
 }
 
-p.componente a:hover,.nos ul a:hover{
-  text-decoration: underline;
-
+p.componente a:hover,
+.nos ul a:hover {
+    text-decoration: underline;
 }
+
 
 /* estilização dos cards */
 
 .container_cards {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  padding: 50px;
-  text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    text-align: center;
 }
 
 .card {
@@ -100,124 +105,124 @@ p.componente a:hover,.nos ul a:hover{
 }
 
 .card:hover {
-  height: 370px;
-  width: 250px;
-  border-radius: 5px;
-  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+    height: 370px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
 .card .wrapper img {
-  position: relative;
-  z-index: 20;
-  border-radius: 50%;
-  display: block;
-  height: 100px;
-  width: 100px;
-  border: 5px solid #fff;
-  object-fit: cover;
-  margin: 20px auto;
-  transition: all 0.3s ease;
+    position: relative;
+    z-index: 20;
+    border-radius: 50%;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all 0.3s ease;
 }
 
 .card:hover .wrapper img.active {
-  height: 370px;
-  width: 250px;
-  margin: 0px auto;
-  border: none;
-  border-radius: 5px;
+    height: 370px;
+    width: 250px;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
 }
 
 .wrapper .title {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 10px;
-  line-height: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 25px;
 }
 
 .wrapper .place {
-  color: #fff;
-  font-size: 17px;
-  line-height: 0px;
-  margin: 10px 0;
+    color: #fff;
+    font-size: 17px;
+    line-height: 0px;
+    margin: 10px 0;
 }
 
 .content {
-  color: #fff;
-  font-size: 17px;
-  margin-top: 10px;
-  padding: 1px 20px 10px 20px!important;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 1px 20px 10px 20px!important;
 }
 
 .content .buttons {
-  display: flex;
+    display: flex;
 }
 
 .buttons .btn {
-  height: 40px;
-  width: 150px;
-  margin: 0 5px;
+    height: 40px;
+    width: 150px;
+    margin: 0 5px;
 }
 
 .buttons .btn button {
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 17px;
-  font-weight: 500;
-  border-radius: 5px;
-  transition: all 0.3s;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
 .btn button:hover {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .card .icons {
-  position: relative;
-  margin-top: -370px;
-  margin-left: 10px;
-  list-style: none;
+    position: relative;
+    margin-top: -370px;
+    margin-left: 10px;
+    list-style: none;
 }
 
 .card .icons.active {
-  display: none;
+    display: none;
 }
 
 .card .icons li {
-  height: 30px;
-  width: 30px;
-  margin: 5px 0;
-  opacity: 0;
-  margin-left: -100px;
-  transition: all 0.5s ease;
+    height: 30px;
+    width: 30px;
+    margin: 5px 0;
+    opacity: 0;
+    margin-left: -100px;
+    transition: all 0.5s ease;
 }
 
 .card:hover .icons li {
-  opacity: 1;
-  margin-left: 7px;
+    opacity: 1;
+    margin-left: 7px;
 }
 
 .card:hover .icons li:nth-child(2) {
-  transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
 .card:hover .icons li:nth-child(3) {
-  transition-delay: 0.4s;
+    transition-delay: 0.4s;
 }
 
 .card .icons li a {
-  color: #0b003a;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background: #fff;
-  display: block;
-  line-height: 32px;
-  transition: all 0.3s;
+    color: #0b003a;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    line-height: 32px;
+    transition: all 0.3s;
 }
 
 .card .icons li a:hover {
