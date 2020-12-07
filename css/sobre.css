@@ -121,6 +121,7 @@ p.componente a:hover,
     object-fit: cover;
     margin: 20px auto;
     transition: all 0.3s ease;
+    box-sizing: unset;
 }
 
 .card:hover .wrapper img.active {
