@@ -103,7 +103,7 @@ body {
 
 /* display flex p/ utilizaçao de flexbox
 flex-wrap p/ definir que as linhas devem ser quebradas
-justify-content p/ alinhar os itens ao inicio do container*/
+justify-content p/ alinhar os itens ao inicio do container2*/
 
 .cards {
     margin: auto;
@@ -133,7 +133,7 @@ justify-content p/ alinhar os itens ao inicio do container*/
     cursor: pointer;
 }
 
-/* as propriedades flex foram definidas para cada item dentro do container
+/* as propriedades flex foram definidas para cada item dentro do container2
 ajustando o tamanho da caixa imagem*/
 
 .card__image {

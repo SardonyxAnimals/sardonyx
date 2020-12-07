@@ -39,7 +39,7 @@
             margin: 0px auto;
         }
         
-        .container {
+        .container2 {
             width: 100%;
             padding-left: 15px;
             padding-right: 15px
@@ -372,7 +372,7 @@
         smartphones, como em tablets */
         
         @media (min-width:992px) {
-            .container {
+            .container2 {
                 max-width: 992px;
                 margin: 0 auto
             }
@@ -388,7 +388,7 @@
         }
         
         @media (min-width:1200px) {
-            .container {
+            .container2 {
                 max-width: 1200px
             }
         }
