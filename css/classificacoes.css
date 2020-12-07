@@ -1,3 +1,12 @@
+* {
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 .topo {
     background-color:#7dc9e0;
     padding: 40px;
@@ -22,28 +31,25 @@
 .nomes ul {
     list-style-type: none;
     font-size: 45px;
-    color: rgb(58, 194, 248);
+    color: rgb(34, 139, 180);
     padding: 10;
     margin: 10px;
+    margin-top: 25px;
 }
-
+.nomes li {
+    margin-top: 0px;
+}
 
 
 h1.titulos {
     color: black;
 }
 
-* {
-    padding: 0;
-    font-size: 100%;
-    border: none;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+
 
 body {
     font-family: 'Open Sans';
+    background: white;
     font-size: 18px;
     font-weight: 100;
     color: #000;
@@ -89,7 +95,6 @@ justify-content p/ alinhar os itens ao inicio do container*/
 /*definindo o estilo e propriedades flex
  todos os itens tentarão ter a mesma largura*/
 .card{
-
     flex: 1 0 300px;
     overflow: hidden;
     display: flex;
@@ -99,9 +104,10 @@ justify-content p/ alinhar os itens ao inicio do container*/
     border-radius:5px;
     box-shadow: 0px 0px 13px rgba(50, 56, 59, 0.473);
     text-decoration: none;
-    margin: 0px ;
+    margin: 15px ;
     max-width: 300px;
     cursor: pointer;
+    
    
 
     
