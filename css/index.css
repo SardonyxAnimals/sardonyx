@@ -7,7 +7,6 @@
         
         body {
             font-family: 'Open Sans', sans-serif;
-            color: white;
             line-height: 25px;
             margin: 0;
             padding: 0;
@@ -355,6 +354,7 @@
         #copyright {
             text-align: center;
             background-color: rgb(70, 130, 180);
+            color: white;
             padding: 10px;
             bottom: 0;
             left: 0;

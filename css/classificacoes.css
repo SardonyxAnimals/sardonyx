@@ -7,25 +7,47 @@
     text-decoration: none;
 }
 
-.topo {
-    background-color:#7dc9e0;
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    border-style: inset;
+.conteudo-principal {
+    display: table;
 }
 
-.topo p {
-    font-size: large;
-    text-align: justify;
-    color: black;
+.conteudo-principal .imagem-principal {
+    display: table-cell;
+    float: left;
+}
+
+.conteudo-principal .imagem-principal img {
+    width: 461px;
+    height: 364px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.conteudo-principal .p-principal {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #3a3a3a;
+    margin: 10px 0px 0px 50px;
+    display: table-cell;
+    float: left;
+    width: 500px;
+}
+
+.conteudo-principal h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    display: table-cell;
+    font-size: 30px;
+    float: right;
+    width: 500px;
+    margin: 135px 50px 0px 40px;
 }
 
 .nomes img {
     /* imagens */
     width: 5%;
     float: initial;
-   
 }
 
 .nomes ul {
@@ -36,16 +58,14 @@
     margin: 10px;
     margin-top: 25px;
 }
+
 .nomes li {
     margin-top: 0px;
 }
 
-
 h1.titulos {
     color: black;
 }
-
-
 
 body {
     font-family: 'Open Sans';
@@ -53,7 +73,7 @@ body {
     font-size: 18px;
     font-weight: 100;
     color: #000;
-    margin: 0 ;
+    margin: 0;
     padding-bottom: 3em;
 }
 
@@ -78,89 +98,97 @@ body {
     margin: 0 4px 4px 0;
     padding-top: 5px;
 }
+
 /* Inicio da config dos cards*/
+
 /* display flex p/ utilizaçao de flexbox
 flex-wrap p/ definir que as linhas devem ser quebradas
 justify-content p/ alinhar os itens ao inicio do container*/
-.cards{
+
+.cards {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     padding: 1em;
     justify-content: flex-start;
-    position: relative; 
-    }
+    position: relative;
+}
 
 /*definindo o estilo e propriedades flex
  todos os itens tentarão ter a mesma largura*/
-.card{
+
+.card {
     flex: 1 0 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     color: #000000f5;
-    border-radius:5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 13px rgba(50, 56, 59, 0.473);
     text-decoration: none;
-    margin: 15px ;
+    margin: 15px;
     max-width: 300px;
     cursor: pointer;
-    
-   
-
-    
 }
+
 /* as propriedades flex foram definidas para cada item dentro do container
 ajustando o tamanho da caixa imagem*/
-.card__image{
+
+.card__image {
     height: 300px;
     max-width: 100%;
     flex: 0 0 120px;
-   
-    }
+}
 
-.card__image img{
+.card__image img {
     height: 100%;
     width: 100%;
-   
+    object-fit: cover;
+}
+
+/* Id para diminuir as imagens que ultrapassem o desejado */
+#ajuste_card img{
+    object-fit: fill;
 
 }
+
 /*flex-direction para definir o alinhamento das divs em colunas*/
-    .card__content{
-        flex-direction: column;
-        display: flex;
-        padding: 11px;
-        height: 100%;
-    }
+
+.card__content {
+    flex-direction: column;
+    display: flex;
+    padding: 11px;
+    height: 100%;
+}
 
 /*configurando o estilo do titulo*/
-.card__title{
-        font-size: 25px;
-        margin-bottom: 1em;
-        font-weight: 550;
-        text-transform: uppercase;
-    
-        }
 
-.card__sinppet{
-        font-size: 16px;
+.card__title {
+    font-size: 25px;
+    margin-bottom: 1em;
+    font-weight: 550;
+    text-transform: uppercase;
+}
 
-    
-        }
+.card__sinppet {
+    font-size: 16px;
+}
+
 /* grid para alinhamento dos icons*/
+
 .card__button {
     height: 100%;
-   
     border: none;
     background: none;
     display: grid;
-    align-items:left;
+    align-items: left;
     grid-template-columns: repeat(2, 0.1fr);
-    
 }
+
 /*ajustando os botões*/
+
 .card__button .button {
     background: none;
     border-radius: 3px;
@@ -171,86 +199,73 @@ ajustando o tamanho da caixa imagem*/
     border: none;
     cursor: pointer;
     margin: 5px;
-
 }
-/*definindo estilos*/    
+
+/*definindo estilos*/
+
 #favbtn.fas {
     transition: 1s;
-
     color: rgb(152, 173, 30);
-    }
- #heartbtn.fas{
-    transition: 1s;
+}
 
-     color: rgb(230, 39, 54)
- }
-            
-        
-.card__button i{
-    
+#heartbtn.fas {
+    transition: 1s;
+    color: rgb(230, 39, 54)
+}
+
+.card__button i {
     margin: 10px 0;
-    background: none;  
+    background: none;
     border: none;
     padding: 0;
-    font-size:20px ;
-    }
+    font-size: 20px;
+}
 
-   
 /* hovers*/
-.card:hover{
-        background-color:#7dc9e0;
-        box-shadow: none;
-  
+
+.card:hover {
+    background-color: #7dc9e0;
+    box-shadow: none;
+}
+
+.card:hover .card__title {
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+.card:hover .card__sinppet {
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+.card:hover img {
+    filter: brightness(50%);
+}
+
+.card:hover .card__button i.far {
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+/*responsividade*/
+
+@media all and (max-width: 600px) {
+    .cards {
+        justify-content: center;
+        display: block;
+        width: 80%;
+        margin: auto;
+        overflow-x: auto;
     }
-
-.card:hover .card__title{
-        
-        color: white;
-        transition: .3s all ease-in-out;
+    .card {
+        margin: auto;
+        margin-bottom: 15px;
     }
-.card:hover .card__sinppet{
-        
-        color: white;
-        transition: .3s all ease-in-out;
+    .card__image {
+        height: 80%;
+        max-width: 100%;
     }
-.card:hover img{
-        filter: brightness(50%);
+    .card__sinppet {
+        width: 80%;
     }
-.card:hover .card__button i.far{
-        color: white;
-        transition: .3s all ease-in-out;
-
-    }
-
-
-
-
-
-    
-
-  /*responsividade*/  
-    @media all and (max-width: 600px){
-
-        .cards{
-            justify-content: center;
-            display: block;
-            width: 80%;
-            margin: auto;
-            overflow-x: auto;
-
-        }
-        .card{
-            margin: auto;
-            margin-bottom: 15px;
-        }
-        .card__image{
-            height: 80%;
-            max-width: 100%;
-
-        }
-        .card__sinppet{
-            width: 80%;
-        }
-
-    }
-
+}
