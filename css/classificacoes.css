@@ -53,7 +53,7 @@
 .nomes ul {
     list-style-type: none;
     font-size: 45px;
-    color: rgb(34, 139, 180);
+    color: rgb(0, 10, 81);
     padding: 10;
     margin: 10px;
     margin-top: 25px;
@@ -149,9 +149,9 @@ ajustando o tamanho da caixa imagem*/
 }
 
 /* Id para diminuir as imagens que ultrapassem o desejado */
-#ajuste_card img{
-    object-fit: fill;
 
+#ajuste_card img {
+    object-fit: fill;
 }
 
 /*flex-direction para definir o alinhamento das divs em colunas*/
@@ -224,7 +224,7 @@ ajustando o tamanho da caixa imagem*/
 /* hovers*/
 
 .card:hover {
-    background-color: #7dc9e0;
+    background-color: rgb(0, 10, 81);
     box-shadow: none;
 }
 
