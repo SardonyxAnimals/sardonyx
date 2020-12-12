@@ -149,6 +149,7 @@ ajustando o tamanho da caixa imagem*/
 .card__image img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 /* Id para diminuir as imagens que ultrapassem o desejado */
