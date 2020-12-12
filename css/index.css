@@ -104,12 +104,14 @@
         .navegacao ul {
             float: right;
             margin-right: 20px;
+            
         }
         
         .navegacao ul li {
             display: inline-block;
             line-height: 80px;
             margin: 0 5px;
+           
         }
         
         .navegacao ul li a {
@@ -118,6 +120,7 @@
             margin: -5px;
             padding: 7px 13px;
             border-radius: 3px;
+            text-decoration: none;
         }
         
         .navegacao a.active,
