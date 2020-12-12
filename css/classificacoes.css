@@ -149,13 +149,13 @@ ajustando o tamanho da caixa imagem*/
 .card__image img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 /* Id para diminuir as imagens que ultrapassem o desejado */
 
 #ajuste_card img {
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /*flex-direction para definir o alinhamento das divs em colunas*/
