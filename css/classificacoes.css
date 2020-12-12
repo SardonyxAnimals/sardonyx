@@ -34,6 +34,10 @@
     width: 500px;
 }
 
+#ajuste_main_img img{
+    width: 450px;
+}
+
 .conteudo-principal h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
