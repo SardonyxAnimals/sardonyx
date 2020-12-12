@@ -17,7 +17,7 @@
 }
 
 .conteudo-principal .imagem-principal img {
-    width: 461px;
+    width: 450px;
     height: 364px;
     margin-top: 20px;
     margin-left: 110px;
@@ -34,9 +34,7 @@
     width: 500px;
 }
 
-#ajuste_main_img img{
-    width: 450px;
-}
+
 
 .conteudo-principal h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
