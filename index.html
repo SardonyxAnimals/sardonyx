@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- fim -->
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -20,35 +27,36 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-                    <ul>
-                        <li><a class="active" href="#">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="#">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#">Categorias</a></li>
+                            <li class="nav-item active"><a href="#" class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
+
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div id="slider">
@@ -89,8 +97,10 @@
                 <tr>
                     <td class="leis">Lei nº 9.605/89 contra crimes Ambientais</td>
                     <td>Art.32</td>
-                    <td> Praticar ato de abuso, maus-tratos, ferir ou mutilar animais silvestres, domésticos ou domesticados, nativos ou exóticos.</td>
-                    <td> A pena será de 3 meses a 1 ano de prisão e multa, aumentada de 1/6 a 1/3 se ocorrer a morte do animal</td>
+                    <td> Praticar ato de abuso, maus-tratos, ferir ou mutilar animais silvestres, domésticos ou
+                        domesticados, nativos ou exóticos.</td>
+                    <td> A pena será de 3 meses a 1 ano de prisão e multa, aumentada de 1/6 a 1/3 se ocorrer a morte do
+                        animal</td>
 
                 </tr>
 
@@ -99,14 +109,17 @@
                     <td class="leiseven">Projeto de Lei 236/12</td>
                     <td> - </td>
                     <td> Projeto de lei que visa o aumento da pena para maus tratos contra animais.</td>
-                    <td> A pena será passará a ser de 1 a 4 anos de prisão, com agravantes no caso de lesões permanentes ou morte do animal, que podem chegar a 6 anos de prisão</td>
+                    <td> A pena será passará a ser de 1 a 4 anos de prisão, com agravantes no caso de lesões permanentes
+                        ou morte do animal, que podem chegar a 6 anos de prisão</td>
                 </tr>
 
 
                 <tr>
                     <td class="leis">Constituição Federal</td>
                     <td>Art.225 inciso VII </td>
-                    <td> [...] proteger a fauna e a flora, vedadas, na forma da lei, as práticas que coloquem em risco sua função ecológica, provoquem a extinção de espécies ou submetam os animais a crueldade.(...)</td>
+                    <td> [...] proteger a fauna e a flora, vedadas, na forma da lei, as práticas que coloquem em risco
+                        sua função ecológica, provoquem a extinção de espécies ou submetam os animais a crueldade.(...)
+                    </td>
                     <td> - </td>
 
                 </tr>
@@ -123,7 +136,8 @@
                     <p class="rodape">
                         <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma pessoa melhor" - Oscar Wilde.</p>
+                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma
+                        pessoa melhor" - Oscar Wilde.</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
@@ -139,9 +153,12 @@
                     </div>
                 </div>
                 <div class="coluna_geral coluna-area-3 social coluna-4">
-                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png"
+                            alt="youtube"></a>
                 </div>
             </div>
         </div>

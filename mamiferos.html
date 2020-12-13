@@ -8,8 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/classificacoes.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!--Bootstrap  -->
+    <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <title>Mamíferos | Sardonyx</title>
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -21,47 +27,53 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="#">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#" class="active">Categorias</a></li>
+                            <li class="nav-item active"><a href="#" class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
+
             </div>
-        </div>
+        </nav>
     </header>
     <main class="principal">
         <section class="container2 col-information">
-        <div class="conteudo-principal">
-            <h1>Quem são os Mamiferos? </h1>
-            <div class="imagem-principal">
-                <img src="img/imgs_categorias/mamiferos/mamiferos.png" alt="Foto conjunto de mamiferos">
-            </div>
-            <!--Titulo e descrição da classe-->
-            <div class="p-principal">
-            <p>Os mamíferos constituem uma classe de animais vertebrados do domínio Eukaryota, do reino Animalia e filo Chordata, subdivididos em dois grupos: aquáticos (cetáceos, sirênios e pinípedes) e terrestres (quadrúpedes e bípedes), que se caracterizam
-                pela presença de glândulas mamárias que, nas fêmeas, produzem leite para a alimentação dos filhotes, presença de pelos ou cabelos, com exceção dos golfinhos e de algumas baleias, que somente na fase embrionária possuem pelos.</p> <br>
-            </div>
+            <div class="conteudo-principal">
+                <h1>Quem são os Mamiferos? </h1>
+                <div class="imagem-principal">
+                    <img src="img/imgs_categorias/mamiferos/mamiferos.png" alt="Foto conjunto de mamiferos">
+                </div>
+                <!--Titulo e descrição da classe-->
+                <div class="p-principal">
+                    <p>Os mamíferos constituem uma classe de animais vertebrados do domínio Eukaryota, do reino Animalia
+                        e filo Chordata, subdivididos em dois grupos: aquáticos (cetáceos, sirênios e pinípedes) e
+                        terrestres (quadrúpedes e bípedes), que se caracterizam
+                        pela presença de glândulas mamárias que, nas fêmeas, produzem leite para a alimentação dos
+                        filhotes, presença de pelos ou cabelos, com exceção dos golfinhos e de algumas baleias, que
+                        somente na fase embrionária possuem pelos.</p> <br>
+                </div>
         </section>
 
         <div class="nomes">
@@ -84,7 +96,8 @@
 
             <ul>D
                 <hr>
-                <li><img src="img/imgs_categorias/mamiferos/Diabo_da_tasmania.jpg" alt="Diabo_da_tasmania"> Diabo-da-tasmânia</li>
+                <li><img src="img/imgs_categorias/mamiferos/Diabo_da_tasmania.jpg" alt="Diabo_da_tasmania">
+                    Diabo-da-tasmânia</li>
             </ul>
 
             <ul>E
@@ -123,7 +136,8 @@
 
             <ul>M
                 <hr>
-                <li><img src="img/imgs_categorias/mamiferos/Macaco-de-Java.jpg" alt="Macaco-de-Java"> Macaco-de-Java</li>
+                <li><img src="img/imgs_categorias/mamiferos/Macaco-de-Java.jpg" alt="Macaco-de-Java"> Macaco-de-Java
+                </li>
             </ul>
 
             <ul>N
@@ -158,7 +172,8 @@
 
             <ul>T
                 <hr>
-                <li><img src="img/imgs_categorias/mamiferos/Tamanduá-Gigante.jpg" alt="Tamanduá-Gigante"> Tamanduá-Gigante</li>
+                <li><img src="img/imgs_categorias/mamiferos/Tamanduá-Gigante.jpg" alt="Tamanduá-Gigante">
+                    Tamanduá-Gigante</li>
             </ul>
 
             <ul>U
@@ -183,7 +198,8 @@
                     <p class="rodape">
                         <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma pessoa melhor" - Oscar Wilde.</p>
+                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma
+                        pessoa melhor" - Oscar Wilde.</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
@@ -199,9 +215,12 @@
                     </div>
                 </div>
                 <div class="coluna_geral coluna-area-3 social coluna-4">
-                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png"
+                            alt="youtube"></a>
                 </div>
             </div>
         </div>
