@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <title>Anfíbios | Sardonyx</title>
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -19,35 +25,35 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#" class="active">Categorias</a></li>
+                            <li class="nav-item active"><a class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contato.html">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main class="principal">
         <section class="container2 col-information">
@@ -82,40 +88,47 @@
                         <!--Card-->
                         <div class="container">
                             <div class="row">
-                                <div class="col"><div class="card">
-                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/Anomaloglossus-kaiei.jpg"
-                                            alt="Anomaloglossus kaiei"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">Anomaloglossus kaiei</div>
-                                        <div class="card__sinppet"></div>
-                                        <div class="card__button">
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
-                                            </button>
-                                            <button class="button"> <i onclick="Click()" id="heartbtn"
-                                                    class="far fa-heart"></i></button>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/anfibios/Anomaloglossus-kaiei.jpg"
+                                                alt="Anomaloglossus kaiei"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Anomaloglossus kaiei</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i>
+                                                </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
                                         </div>
+
                                     </div>
-        
                                 </div>
-        </div>
-                                
-                                <div class="col"><div class="card">
-                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/Allobates crombiei.jpg"
-                                            alt="Allobates crombiei"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">Allobates crombiei</div>
-                                        <div class="card__sinppet"></div>
-                                        <div class="card__button">
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
-                                            </button>
-                                            <button class="button"> <i onclick="Click()" id="heartbtn"
-                                                    class="far fa-heart"></i></button>
+
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/anfibios/Allobates crombiei.jpg"
+                                                alt="Allobates crombiei"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Allobates crombiei</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i>
+                                                </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
                                         </div>
+
                                     </div>
-        
-                                </div></div>
-                                
-                               
+                                </div>
+
+
                     </section>
                 </li>
 
@@ -126,10 +139,10 @@
                 <li>
                     <!-- Criação dos cards -->
                     <section class="cards">
-                       
+
                         <!-- a tag a deixa o card clicavel -->
                         <!--Card-->
-                    
+
                         <div class="card">
                             <div class="card__image"> <img src="img/imgs_categorias/anfibios/CobraCega.jpg"
                                     alt="cobra cega"></div>
@@ -158,47 +171,53 @@
                     <section class="cards">
                         <!--Card-->
                         <div class="row">
-                            <div class="col">  <div class="card">
-                                <div class="card__image"> <img src="img/imgs_categorias/anfibios/perereca.jpg"
-                                        alt="perereca"></div>
-                                <div class="card__content">
-                                    <div class="card__title">Perereca</div>
-                                    <div class="card__sinppet"></div>
-                                    <div class="card__button">
-    
-                                        <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
-                                        </button>
-                                        <button class="button"> <i onclick="Click()" id="heartbtn"
-                                                class="far fa-heart"></i></button>
-    
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/perereca.jpg"
+                                            alt="perereca"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Perereca</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
+                                            </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/anfibios/Perereca-Olhos-vermelhos.jpg"
+                                            alt="perereca-olhos-vermelho"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Perereca-Olhos-Vermelhos</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
+                                            </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+
+                                        </div>
+
+
                                     </div>
                                 </div>
-    
-                            </div></div>
-                            <div class="col"> <div class="card">
-                                <div class="card__image"> <img
-                                        src="img/imgs_categorias/anfibios/Perereca-Olhos-vermelhos.jpg"
-                                        alt="perereca-olhos-vermelho"></div>
-                                <div class="card__content">
-                                    <div class="card__title">Perereca-Olhos-Vermelhos</div>
-                                    <div class="card__sinppet"></div>
-                                    <div class="card__button">
-    
-                                        <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
-                                        </button>
-                                        <button class="button"> <i onclick="Click()" id="heartbtn"
-                                                class="far fa-heart"></i></button>
-    
-                                    </div>
-    
-    
-                                </div>
-                            </div></div>
-                            
-                          </div>
-                      
+                            </div>
+
+                        </div>
+
                         <!--Card-->
-                       
+
                     </section>
                 </li>
 
@@ -211,62 +230,74 @@
                     <section class="cards">
                         <!--Card-->
                         <div class="row">
-                            <div class="col"> <div class="card">
-                                <div class="card__image"> <img src="img/imgs_categorias/anfibios/rã-dardo-venenosa-azul.jpg"
-                                        alt="Rã-dardo-venosa-azul"></div>
-                                <div class="card__content">
-                                    <div class="card__title">Rã-dardo-venosa-azul</div>
-                                    <div class="card__sinppet"></div>
-                                    <div class="card__button">
-                                        <!---Esses botões ainda não possuem funcionalidades!!-->
-                                        <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
-                                        </button>
-                                        <button class="button"> <i onclick="Click()" id="heartbtn"
-                                                class="far fa-heart"></i></button>
-    
-                                    </div>
-    
-    
-                                </div>
-                            </div></div>
-                            <div class="col"><!--Card-->
+                            <div class="col">
                                 <div class="card">
-                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/rã.jpg" alt="Rã"></div>
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/anfibios/rã-dardo-venenosa-azul.jpg"
+                                            alt="Rã-dardo-venosa-azul"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Rã-dardo-venosa-azul</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <!---Esses botões ainda não possuem funcionalidades!!-->
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
+                                            </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/rã.jpg" alt="Rã">
+                                    </div>
                                     <div class="card__content">
                                         <div class="card__title">Rã</div>
                                         <div class="card__sinppet"></div>
                                         <div class="card__button">
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
                                             </button>
                                             <button class="button"> <i onclick="Click()" id="heartbtn"
                                                     class="far fa-heart"></i></button>
                                         </div>
-        
+
                                     </div>
-                                </div></div>
-                            <div class="col"> <!--Card-->
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--Card-->
                                 <div class="card">
-                                    <div class="card__image"> <img src="img/imgs_categorias/anfibios/rhinella-lescurei.jpg"
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/anfibios/rhinella-lescurei.jpg"
                                             alt="rhinella-lescurei"></div>
                                     <div class="card__content">
                                         <div class="card__title">Rhinella-lescurei</div>
                                         <div class="card__sinppet"></div>
                                         <div class="card__button">
-        
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
+
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
                                             </button>
                                             <button class="button"> <i onclick="Click()" id="heartbtn"
                                                     class="far fa-heart"></i></button>
-        
-                                        </div>
-        
-                                    </div>
-                                </div></div>
 
-                          </div>
-                       
-                        
-                       
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
 
                     </section>
                 </li>
@@ -278,7 +309,8 @@
                     <!-- Criação dos cards -->
                     <section class="cards">
                         <div class="row">
-                            <div class="col"> <!--Card-->
+                            <div class="col">
+                                <!--Card-->
                                 <div class="card">
                                     <div class="card__image"> <img src="img/imgs_categorias/anfibios/sapo-de-vidro.png"
                                             alt="Sapo-de-vidro"></div>
@@ -286,15 +318,18 @@
                                         <div class="card__title">Sapo de Vidro</div>
                                         <div class="card__sinppet"></div>
                                         <div class="card__button">
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
                                             </button>
                                             <button class="button"> <i onclick="Click()" id="heartbtn"
                                                     class="far fa-heart"></i></button>
-        
+
                                         </div>
                                     </div>
-                                </div></div>
-                            <div class="col"> <!--Card-->
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--Card-->
                                 <div class="card">
                                     <div class="card__image"> <img src="img/imgs_categorias/anfibios/Salamandra.jpg"
                                             alt="Salamandra"></div>
@@ -302,18 +337,20 @@
                                         <div class="card__title">Salamandra</div>
                                         <div class="card__sinppet"></div>
                                         <div class="card__button">
-                                            <button class="button"> <i onclick="Clica()" id="favbtn" class="far fa-star"></i>
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i>
                                             </button>
                                             <button class="button"> <i onclick="Click()" id="heartbtn"
                                                     class="far fa-heart"></i></button>
                                         </div>
-        
+
                                     </div>
-                                </div></div>
-                            
-                          </div>
-                       
-                       
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </section>
                 </li>
             </ul>
@@ -322,7 +359,7 @@
                 <li>
                     <!-- Criação dos cards -->
                     <section class="cards">
-                     
+
                         <!--Card-->
                         <div class="card">
                             <div class="card__image"> <img src="img/imgs_categorias/anfibios/tritão.jpg" alt="Tritão">
@@ -339,11 +376,11 @@
 
                             </div>
                         </div>
-                    </div>
-                    </section>
-                </li>
+        </div>
+        </section>
+        </li>
 
-            </ul>
+        </ul>
         </div>
     </main>
     <footer id="footer">

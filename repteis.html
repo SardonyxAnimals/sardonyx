@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <title>Répteis | Sardonyx</title>
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -20,34 +26,35 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#" class="active">Categorias</a></li>
+                            <li class="nav-item active"><a class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item">Répteis</a>
                             </div>
                         </div>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contato.html">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main class="principal">
         <section class="container2 col-information">
@@ -61,8 +68,10 @@
                 </div>
 
                 <div class="p-principal">
-                    <p>Os répteis constituem uma classe de animais vertebrados tetrápodes e ectotérmicos, ou seja, não possuem temperatura corporal constante.
-                         São todos amniotas, característica que os permitiu ficarem independentes da água para reprodução, ao contrário dos anfíbios
+                    <p>Os répteis constituem uma classe de animais vertebrados tetrápodes e ectotérmicos, ou seja, não
+                        possuem temperatura corporal constante.
+                        São todos amniotas, característica que os permitiu ficarem independentes da água para
+                        reprodução, ao contrário dos anfíbios
                     </p>
 
                 </div>
@@ -72,490 +81,581 @@
         <div class="nomes">
             <!--Lista de animais de A a Z-->
             <ul>A
-         <section class="cards">
+                <section class="cards">
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                   
-                        <!--Card-->
-                        <div class = "card">
-                           <div class="img-responsive card__image"  > <img src="img/imgs_categorias/repteis/Anfisbenas.jpg" alt="Anfisbenas"></div>
-                           <div class="card__content">       
-                           <div class="card__title">Anfisbenas</div>
-                           <div class="card__sinppet"></div>
-                           <div class="card__button">           
-                           <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                        <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                        </div>
-                        </div>
-                       </div>
-                    </div>
-                    <div class="col">
-                        <div class = "card">
-                            <div class="card__image" > <img src="img/imgs_categorias/repteis/anolis_verde.png" alt="Anfisbenas"></div>
-                            <div class="card__content">       
-                            <div class="card__title">anolis Verde</div>
-                            <div class="card__sinppet"></div>
-                            <div class="card__button">           
-                            <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                         <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                         </div>
-                         </div>
 
-                    </div>
-                </div>
-                <div class="col">
-                    <div class = "card">
-                        <div class="card__image" > <img src="img/imgs_categorias/repteis/agamidae.jpg" alt="Anfisbenas"></div>
-                        <div class="card__content">       
-                        <div class="card__title">agamidae</div>
-                        <div class="card__sinppet"></div>
-                        <div class="card__button">           
-                        <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                     <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                     </div>
-                     </div>
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="img-responsive card__image"> <img
+                                            src="img/imgs_categorias/repteis/Anfisbenas.jpg" alt="Anfisbenas"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Anfisbenas</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/anolis_verde.png"
+                                            alt="Anfisbenas"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">anolis Verde</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
 
-                </div>
-            </div>
-             </div>
-             </div>
-                       </section>
-                    </li>
-                </ul>
-           
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/agamidae.jpg"
+                                            alt="Anfisbenas"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">agamidae</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </li>
+            </ul>
+
 
             <ul>B
-              
-                <li> 
+
+                <li>
                     <section class="cards">
-                       
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                      <!--Card-->
-                      <div class = "card">
-                        <div class="card__image" style="width: 100%"> <img src="img/imgs_categorias/repteis/Basilisco.jpg" alt="Basilisco"></div>
-                        <div class="card__content">       
-                        <div class="card__title">Basilisco</div>
-                        <div class="card__sinppet"></div>
-                        <div class="card__button">           
-                        <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                     <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                     </div>
-                     </div>
-                    </div>
-                    </div>
-                    <div class="col">
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/briba.jpg "alt="Briba"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Briba</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                      </div>
-                       <div class="col">
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/boipiranga.jpg "alt="Boipiranga"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Boipiranga</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                      </div>
-                     </div>
-                    </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image" style="width: 100%"> <img
+                                                src="img/imgs_categorias/repteis/Basilisco.jpg" alt="Basilisco"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Basilisco</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/briba.jpg "
+                                                alt="Briba"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Briba</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/boipiranga.jpg "
+                                                alt="Boipiranga"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Boipiranga</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                    </li>
+                </li>
             </ul>
 
             <ul>C
-                <li> <section class="cards">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">                             
-                    <!--Card-->
-                    <div class = "card">
-                      <div class="card__image" > <img src="img/imgs_categorias/repteis/Camaleão.jpg" alt="Camaleão"></div>
-                      <div class="card__content">       
-                      <div class="card__title">Camaleão</div>
-                      <div class="card__sinppet"></div>
-                      <div class="card__button">           
-                      <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                   <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                   </div>
-                   </div>
-                  </div>
-                </div>
-         
-                <div class="col">
-                  <div class = "card">
-                    <div class="card__image" > <img src="img/imgs_categorias/repteis/Cobra-d'água.jpg" alt="Cobra-d'água'"></div>
-                    <div class="card__content">       
-                    <div class="card__title">Cobra-d'água</div>
-                    <div class="card__sinppet"></div>
-                    <div class="card__button">           
-                    <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                 <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                 </div>
-                 </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class = "card">
-                    <div class="card__image" > <img src="img/imgs_categorias/repteis/Cobra-do-milho.jpg" alt="Cobra-do-milho"></div>
-                    <div class="card__content">       
-                    <div class="card__title">Cobra-do-milho</div>
-                    <div class="card__sinppet"></div>
-                    <div class="card__button">           
-                    <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                 <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                 </div>
-                 </div>
-                </div>
-                </div>
-                </div>
-            </div>
-                  
-                  </section></li>
+                <li>
+                    <section class="cards">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/Camaleão.jpg"
+                                                alt="Camaleão"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Camaleão</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/repteis/Cobra-d'água.jpg" alt="Cobra-d'água'">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__title">Cobra-d'água</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/repteis/Cobra-do-milho.jpg"
+                                                alt="Cobra-do-milho"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Cobra-do-milho</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </li>
             </ul>
 
-           
+
             </ul>
 
             <ul>D
-              <li> 
+                <li>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col">                             
-                <!--Card-->
-                <div class = "card">
-                  <div class="card__image" > <img src="img/imgs_categorias/repteis/Dragao_de_komodo.jpg" alt="Dragao_de_komodo"></div>
-                  <div class="card__content">       
-                  <div class="card__title">Dragao de komodo</div>
-                  <div class="card__sinppet"></div>
-                  <div class="card__button">           
-                  <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-               <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-               </div>
-               </div>
-              </div>
-            </div>
-            <div class="col">                             
-                <!--Card-->
-                <div class = "card">
-                  <div class="card__image" > <img src="img/imgs_categorias/repteis/diabo_espinhoso.jpg" alt="diabo_espinhoso"></div>
-                  <div class="card__content">       
-                  <div class="card__title">Diabo espinhoso</div>
-                  <div class="card__sinppet"></div>
-                  <div class="card__button">           
-                  <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-               <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-               </div>
-               </div>
-              </div>
-            </div>
-            <div class="col">                             
-                <!--Card-->
-                <div class = "card">
-                  <div class="card__image" > <img src="img/imgs_categorias/repteis/dragao_Espinhoso.jpg" alt="dragao voador"></div>
-                  <div class="card__content">       
-                  <div class="card__title">dragao voador</div>
-                  <div class="card__sinppet"></div>
-                  <div class="card__button">           
-                  <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-               <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-               </div>
-               </div>
-              </div>
-            </div>
-            
-            </div>
-                </div>
-     
-              </section></li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/repteis/Dragao_de_komodo.jpg"
+                                            alt="Dragao_de_komodo"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Dragao de komodo</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/diabo_espinhoso.jpg"
+                                            alt="diabo_espinhoso"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Diabo espinhoso</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/repteis/dragao_Espinhoso.jpg" alt="dragao voador">
+                                    </div>
+                                    <div class="card__content">
+                                        <div class="card__title">dragao voador</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </section>
+                </li>
 
             </ul>
 
             <ul>I
-                <li> 
+                <li>
                     <section class="cards">
-                        
-                <div class="container">
-                    <div class="row">
-                        <div class="col">                             
-                <!--Card-->
-                <div class = "card">
-                  <div class="card__image" > <img src="img/imgs_categorias/repteis/Iguana.jpg" alt="iguana"></div>
-                  <div class="card__content">       
-                  <div class="card__title">Dragao de komodo</div>
-                  <div class="card__sinppet"></div>
-                  <div class="card__button">           
-                  <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-               <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-               </div>
-               </div>
-              </div>
-            </div>
-                 
-                 </div>
-                </div>
-                  
-                  </section></li>
-               
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/Iguana.jpg"
+                                                alt="iguana"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Dragao de komodo</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                </li>
+
 
             </ul>
 
             <ul>J
-                <li> 
+                <li>
                     <!--Cards!!-->
                     <section class="cards">
                         <div class="container">
                             <div class="row">
-                                <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/Jacare.jpg" alt="jacare"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Jacaré</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>                                             
-                    <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/jararaca.jpg" alt="jararaca"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Jararaca</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>   
-                    <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/jiboia.jpeg" alt="jiboia"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Jiboia</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>           
-                  
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/Jacare.jpg"
+                                                alt="jacare"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Jacaré</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/jararaca.jpg"
+                                                alt="jararaca"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Jararaca</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/jiboia.jpeg"
+                                                alt="jiboia"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Jiboia</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                               
+
+
             </ul>
 
             <ul>L
-                <li> 
+                <li>
                     <!--Cards!!-->
                     <section class="cards">
                         <div class="container">
                             <div class="row">
-                                <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/Lagarto_de_chifre.jpg" alt="Lagarto_de_chifre"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Lagarto de chifre</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>
-                      
-                            <div class="col">                             
-                    <!--Card-->
-                    <div class = "card">
-                      <div class="card__image" > <img src="img/imgs_categorias/repteis/lagarto-tamaquaré.jpg" alt="lagarto tamaquare"></div>
-                      <div class="card__content">       
-                      <div class="card__title">lagarto tamaquare</div>
-                      <div class="card__sinppet"></div>
-                      <div class="card__button">           
-                      <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                   <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                   </div>
-                   </div>
-                  </div>
-                </div>                        
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/repteis/Lagarto_de_chifre.jpg"
+                                                alt="Lagarto_de_chifre"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Lagarto de chifre</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/repteis/lagarto-tamaquaré.jpg"
+                                                alt="lagarto tamaquare"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">lagarto tamaquare</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                
-                        <div class="col">                             
-                <!--Card-->
-                <div class = "card">
-                  <div class="card__image" > <img src="img/imgs_categorias/repteis/lagartinho-de-linhares.jpg" alt="lagartinho-de-linhares"></div>
-                  <div class="card__content">       
-                  <div class="card__title">Jacaré</div>
-                  <div class="card__sinppet"></div>
-                  <div class="card__button">           
-                  <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-               <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-               </div>
-               </div>
-              </div>
-            </div>                        
-               
-                 </div>
-                </div>
-               
-                  
-                  </section></li>
-            
+
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img
+                                                src="img/imgs_categorias/repteis/lagartinho-de-linhares.jpg"
+                                                alt="lagartinho-de-linhares"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">Jacaré</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </section>
+                </li>
+
             </ul>
 
             <ul>S
-                <li> 
+                <li>
                     <!--Cards!!-->
                     <section class="cards">
                         <div class="container">
                             <div class="row">
-                                <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/sucuri.jpg" alt="sucuri"></div>
-                          <div class="card__content">       
-                          <div class="card__title">sucuri</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>
-                    <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/surucucu.jpg" alt="surucucu"></div>
-                          <div class="card__content">       
-                          <div class="card__title">surucucu</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>
-                    <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/salamanta.jpg" alt="salamanta"></div>
-                          <div class="card__content">       
-                          <div class="card__title">salamanta</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>
-                    
-                 </div>
-                </div>
-                </section>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/sucuri.jpg"
+                                                alt="sucuri"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">sucuri</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/surucucu.jpg"
+                                                alt="surucucu"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">surucucu</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <!--Card-->
+                                    <div class="card">
+                                        <div class="card__image"> <img src="img/imgs_categorias/repteis/salamanta.jpg"
+                                                alt="salamanta"></div>
+                                        <div class="card__content">
+                                            <div class="card__title">salamanta</div>
+                                            <div class="card__sinppet"></div>
+                                            <div class="card__button">
+                                                <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                        class="far fa-star"></i> </button>
+                                                <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                        class="far fa-heart"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
             </ul>
 
             <ul>T
                 <!--Cards!!-->
-                <section class="cards">                   
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/Tartaruga-marinha.jpg" alt="Tartaruga-marinha"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Tartaruga-Marinha</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                        </div>
-                        <div class="col">                             
-                            <!--Card-->
-                            <div class = "card">
-                              <div class="card__image" > <img src="img/imgs_categorias/repteis/tartaruga-oliva.jpg" alt="Tartaruga oliva"></div>
-                              <div class="card__content">       
-                              <div class="card__title">Tartaruga-oliva</div>
-                              <div class="card__sinppet"></div>
-                              <div class="card__button">           
-                              <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                           <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                           </div>
-                           </div>
-                          </div>
+                <section class="cards">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img
+                                            src="img/imgs_categorias/repteis/Tartaruga-marinha.jpg"
+                                            alt="Tartaruga-marinha"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Tartaruga-Marinha</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                       
-                    
-                        <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/tuataras.jpg" alt="tuataras"></div>
-                          <div class="card__content">       
-                          <div class="card__title">tuatara</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      </div>
-                    </div>
-                </div>
-                    <div class="row">
-                    <div class="col">                             
-                        <!--Card-->
-                        <div class = "card">
-                          <div class="card__image" > <img src="img/imgs_categorias/repteis/Tieu.jpg" alt="Tieu"></div>
-                          <div class="card__content">       
-                          <div class="card__title">Tieu</div>
-                          <div class="card__sinppet"></div>
-                          <div class="card__button">           
-                          <button class="button">  <i onclick = "Clica()" id = "favbtn" class="far fa-star"></i> </button>                                 
-                       <button class="button"> <i onclick = "Click()" id="heartbtn" class="far fa-heart"></i></button>                         
-                       </div>
-                       </div>
-                      
-                    </div>
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/tartaruga-oliva.jpg"
+                                            alt="Tartaruga oliva"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Tartaruga-oliva</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/tuataras.jpg"
+                                            alt="tuataras"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">tuatara</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                   
-                      
+                        <div class="row">
+                            <div class="col">
+                                <!--Card-->
+                                <div class="card">
+                                    <div class="card__image"> <img src="img/imgs_categorias/repteis/Tieu.jpg"
+                                            alt="Tieu"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">Tieu</div>
+                                        <div class="card__sinppet"></div>
+                                        <div class="card__button">
+                                            <button class="button"> <i onclick="Clica()" id="favbtn"
+                                                    class="far fa-star"></i> </button>
+                                            <button class="button"> <i onclick="Click()" id="heartbtn"
+                                                    class="far fa-heart"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                 </section>
-              
+
             </ul>
     </main>
     <footer id="footer">
@@ -565,7 +665,8 @@
                     <p class="rodape">
                         <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma pessoa melhor" - Oscar Wilde.</p>
+                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma
+                        pessoa melhor" - Oscar Wilde.</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
@@ -581,9 +682,12 @@
                     </div>
                 </div>
                 <div class="coluna_geral coluna-area-3 social coluna-4">
-                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png"
+                            alt="youtube"></a>
                 </div>
             </div>
         </div>

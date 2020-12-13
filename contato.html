@@ -8,6 +8,12 @@
     <title>Contato | Sardonyx</title>
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <link rel="stylesheet" type="text/css" href="css/contato.css" />
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -19,43 +25,45 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#">Categorias</a></li>
+                            <li class="nav-item active"><a class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a class="active" href="#">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div class="formulario">
             <form action="#" class="form-contato" method="post" tabindex="1">
                 <input id="nome_id" type="text" class="form-contato-input" name="nome" placeholder="Nome" required />
-                <input id="email_id" type="email" class="form-contato-input" name="email" placeholder="Email" required />
+                <input id="email_id" type="email" class="form-contato-input" name="email" placeholder="Email"
+                    required />
                 <input type="tel" class="form-contato-input" maxlength="9" name="tel" placeholder="Telefone" />
-                <textarea id="msg_id" class="form-contato-area" name="conteudo" placeholder="Mensagem..." required></textarea>
+                <textarea id="msg_id" class="form-contato-area" name="conteudo" placeholder="Mensagem..."
+                    required></textarea>
                 <!--Botão personalizado com Bootstrap-->
                 <button type="submit" class="btn btn-secondary btn-lg" onclick="validacao()">Enviar</button>
             </form>
@@ -70,7 +78,8 @@
                     <p class="rodape">
                         <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma pessoa melhor" - Oscar Wilde.</p>
+                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma
+                        pessoa melhor" - Oscar Wilde.</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
@@ -86,9 +95,12 @@
                     </div>
                 </div>
                 <div class="coluna_geral coluna-area-3 social coluna-4">
-                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png"
+                            alt="youtube"></a>
                 </div>
             </div>
         </div>

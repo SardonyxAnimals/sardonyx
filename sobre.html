@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sobre | Sardonyx</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <link rel="stylesheet" type="text/css" href="css/sobre.css" />
     <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
@@ -18,34 +26,35 @@
 
 <body>
     <header id="header" class="pagina-sobre">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#">Categorias</a></li>
+                            <li class="nav-item active"><a class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item" href="aves.html">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-                        <li><a class="active" href="#">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contato.html">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
 
@@ -58,166 +67,178 @@
         <div class="nos">
             <div class="textnos">
                 <h2>QUEM SOMOS?</h2>
-                <p class="componente">Somos uma equipe de 5 estudantes do Instituto Federal de Alagoas - campus Maceió, cursando informática para internet. Desenvolvemos o Sardonyx para um projeto da matéria de Programação Web. Pretendemos continuar mantendo o site ativo mesmo
+                <p class="componente">Somos uma equipe de 5 estudantes do Instituto Federal de Alagoas - campus Maceió,
+                    cursando informática para internet. Desenvolvemos o Sardonyx para um projeto da matéria de
+                    Programação Web. Pretendemos continuar mantendo o site ativo mesmo
                     após todas as entregas.
                 </p>
             </div>
 
             <!-- aqui se inicia o código dos cards -->
             <div class="container2_cards flex">
-              <div class="card">
-                  <!-- Fernanda's card -->
-                  <div class="wrapper">
-                      <a href="#"><img src="img/img_sobre/fernanda.jpg" alt=""></a>
-                      <div class="title">Fernanda Almeida</div>
-                      <div class="place">Messias, AL</div>
-                  </div>
-      
-                  <div class="content">
-  
-                      <p>Web<br/>developer</p> 
-                      <div class="buttons">
-                          <div class="btn">
-                              <button onclick="window.open('https://t.me/nandinha_almeida', '_blank')">Menssagem</button>
-                          </div>
-                          <div class="btn">
-                            <button onclick="window.open('http://www.github.com/Cx-nanda', '_blank')" type="button">GitHub</button>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="icons">
-                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="https://www.instagram.com/cx.nanda/" target="_blank""><span class="fab fa-instagram"></span></a></li>
-                  </div>
-              </div>
-      
-              <div class="card">
-                  <!-- Failesmen's card -->
-                  <div class="wrapper">
-                      <a href="#"><img src="img/img_sobre/failes.jpeg" alt=""></a>
-                      <div class="title">Failesmen Evandro</div>
-                      <div class="place">Marechal Deodoro, AL</div>
-                  </div>
-      
-                  <div class="content">
-      
-                      <p>Web<br/>developer</p>
-                      <div class="buttons">
-                          <div class="btn">
-                              <button onclick="window.open('https://t.me/Failesmen', '_blank')">Mensagem</button>
-                          </div>
-                          <div class="btn">
-                            <button onclick="window.open('https://github.com/Failesmen', '_blank')" type="button">GitHub</button>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="icons">
-                      <li><a href="https://www.facebook.com/Failesmen/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                  </div>
-              </div>
-      
-              <div class="card">
-                  <!-- Sarah's card -->
-                  <div class="wrapper">
-                      <a href="#"><img src="img/img_sobre/sarah.jpeg" alt=""></a>
-                      <div class="title">Sarah<br> Paz</div>
-                      <div class="place">Maceió, AL</div>
-                  </div>
-      
-                  <div class="content">
-      
-                      <p>Web<br/>developer</p>
-                      <div class="buttons">
-                          <div class="btn">
-                              <button onclick="window.open('https://t.me/sarahletz', '_blank')">Menssagem</button>
-                          </div>
-                          <div class="btn">
-                            <button onclick="window.open('https://github.com/learncodesarah', '_blank')" type="button">GitHub</button>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="icons">
-                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                  </div>
-              </div>
-      
-              <div class="card">
-                  <!-- Karla's card -->
-                  <div class="wrapper">
-                      <a href="#"><img src="img/img_sobre/karla.jpg" alt=""></a>
-                      <div class="title">Karla<br> Cristina</div>
-                      <div class="place">Maceió, AL</div>
-                  </div>
-      
-                  <div class="content">
-      
-                      <p>Web<br/>developer</p>
-                      <div class="buttons">
-                          <div class="btn">
-                              <button>Menssagem</button>
-                          </div>
-                          <div class="btn">
-                            <button onclick="window.open(' https://github.com/karlaaraujo', '_blank')" type="button">GitHub</button>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="icons">
-                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                  </div>
-              </div>
-      
-              <div class="card">
-                  <!-- Junior's card -->
-                  <div class="wrapper">
-                      <a href="#"><img src="img/img_sobre/junio.jpg" alt=""></a>
-                      <div class="title">Zé<br>Cris</div>
-                      <div class="place">SMC, AL</div>
-                  </div>
-      
-                  <div class="content">
-      
-                      <p>Web<br/>developer</p>
-                      <div class="buttons">
-                          <div class="btn">
-                              <button>Menssagem</button>
-                          </div>
-                          <div class="btn">
-                            <button onclick="window.open('https://github.com/eujrvieira', '_blank')" type="button">GitHub</button>
-                          </div>
-                      </div>
-                  </div>
-      
-                  <div class="icons">
-                      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                  </div>
-              </div>
-      
-      
-          </div>
-        </div>
-           
-            <!-- aqui encerra a parte dos cards -->
+                <div class="card">
+                    <!-- Fernanda's card -->
+                    <div class="wrapper">
+                        <a href="#"><img src="img/img_sobre/fernanda.jpg" alt=""></a>
+                        <div class="title">Fernanda Almeida</div>
+                        <div class="place">Messias, AL</div>
+                    </div>
 
-            <!-- Terceira parte, onde fala sobre contato -->
-            <div class="cont">
-                <h2>ENTRE EM CONTATO CONOSCO!</h2>
-                <p class="componente">Para reportar algum erro, fazer alguma crítica, sugerir conteúdo e etc. Sintam-se a vontade para nos contatar e dar seu feedback em: <a href="contato.html">Contato</a></p>
-                <p class="componente">Para mais detalhes do nosso site, visite o <a href="https://github.com/SardonyxAnimals">perfil</a> do projeto no GitHub </p>
+                    <div class="content">
+
+                        <p>Web<br />developer</p>
+                        <div class="buttons">
+                            <div class="btn">
+                                <button
+                                    onclick="window.open('https://t.me/nandinha_almeida', '_blank')">Menssagem</button>
+                            </div>
+                            <div class="btn">
+                                <button onclick="window.open('http://www.github.com/Cx-nanda', '_blank')"
+                                    type="button">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="https://www.instagram.com/cx.nanda/" target="_blank""><span class=" fab
+                                fa-instagram"></span></a></li>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Failesmen's card -->
+                    <div class="wrapper">
+                        <a href="#"><img src="img/img_sobre/failes.jpeg" alt=""></a>
+                        <div class="title">Failesmen Evandro</div>
+                        <div class="place">Marechal Deodoro, AL</div>
+                    </div>
+
+                    <div class="content">
+
+                        <p>Web<br />developer</p>
+                        <div class="buttons">
+                            <div class="btn">
+                                <button onclick="window.open('https://t.me/Failesmen', '_blank')">Mensagem</button>
+                            </div>
+                            <div class="btn">
+                                <button onclick="window.open('https://github.com/Failesmen', '_blank')"
+                                    type="button">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <li><a href="https://www.facebook.com/Failesmen/" target="_blank"><span
+                                    class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Sarah's card -->
+                    <div class="wrapper">
+                        <a href="#"><img src="img/img_sobre/sarah.jpeg" alt=""></a>
+                        <div class="title">Sarah<br> Paz</div>
+                        <div class="place">Maceió, AL</div>
+                    </div>
+
+                    <div class="content">
+
+                        <p>Web<br />developer</p>
+                        <div class="buttons">
+                            <div class="btn">
+                                <button onclick="window.open('https://t.me/sarahletz', '_blank')">Menssagem</button>
+                            </div>
+                            <div class="btn">
+                                <button onclick="window.open('https://github.com/learncodesarah', '_blank')"
+                                    type="button">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Karla's card -->
+                    <div class="wrapper">
+                        <a href="#"><img src="img/img_sobre/karla.jpg" alt=""></a>
+                        <div class="title">Karla<br> Cristina</div>
+                        <div class="place">Maceió, AL</div>
+                    </div>
+
+                    <div class="content">
+
+                        <p>Web<br />developer</p>
+                        <div class="buttons">
+                            <div class="btn">
+                                <button>Menssagem</button>
+                            </div>
+                            <div class="btn">
+                                <button onclick="window.open(' https://github.com/karlaaraujo', '_blank')"
+                                    type="button">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Junior's card -->
+                    <div class="wrapper">
+                        <a href="#"><img src="img/img_sobre/junio.jpg" alt=""></a>
+                        <div class="title">Zé<br>Cris</div>
+                        <div class="place">SMC, AL</div>
+                    </div>
+
+                    <div class="content">
+
+                        <p>Web<br />developer</p>
+                        <div class="buttons">
+                            <div class="btn">
+                                <button>Menssagem</button>
+                            </div>
+                            <div class="btn">
+                                <button onclick="window.open('https://github.com/eujrvieira', '_blank')"
+                                    type="button">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icons">
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    </div>
+                </div>
+
 
             </div>
+        </div>
+
+        <!-- aqui encerra a parte dos cards -->
+
+        <!-- Terceira parte, onde fala sobre contato -->
+        <div class="cont">
+            <h2>ENTRE EM CONTATO CONOSCO!</h2>
+            <p class="componente">Para reportar algum erro, fazer alguma crítica, sugerir conteúdo e etc. Sintam-se a
+                vontade para nos contatar e dar seu feedback em: <a href="contato.html">Contato</a></p>
+            <p class="componente">Para mais detalhes do nosso site, visite o <a
+                    href="https://github.com/SardonyxAnimals">perfil</a> do projeto no GitHub </p>
+
+        </div>
 
     </main>
     <!-- Aqui é o footer -->
@@ -228,7 +249,8 @@
                     <p class="rodape">
                         <a href="index.html"><img src="img/logo_rodape.png" height="60px" alt="Logo da Sardonyx"></a>
                     </p>
-                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma pessoa melhor" - Oscar Wilde.</p>
+                    <p class="rodape alinhar">"Se você passar tempo com os animais, corre o risco de se tornar uma
+                        pessoa melhor" - Oscar Wilde.</p>
                 </div>
                 <div class="coluna_geral coluna-lugar-1 coluna-area-2 coluna-2">
                     <h3>Menu</h3>
@@ -244,9 +266,12 @@
                     </div>
                 </div>
                 <div class="coluna_geral coluna-area-3 social coluna-4">
-                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png" alt="facebook"></a>
-                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/testando123450" target="_blank"><img src="img/social-facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.twitter.com/testando123450" target="_blank"><img src="img/social-twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com/testando123450" target="_blank"><img src="img/social-youtube.png"
+                            alt="youtube"></a>
                 </div>
             </div>
         </div>

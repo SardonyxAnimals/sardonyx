@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- fim -->
     <title>Aves | Sardonyx</title>
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -19,34 +25,35 @@
 
 <body>
     <header id="header">
-        <div class="container2">
-            <div class="linha">
-                <div id="logo" class="coluna_geral coluna-area-3">
-                    <a href="index.html"><img src="img/logo_normal.png" alt="Logo"></a>
-                </div>
-                <nav class="navegacao">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_normal.png" width="120" height="70" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="active"><a class="nav-link" href="index.html">Home</a></li>
                         <div class="dropdown">
-                            <li><a href="#" class="active">Categorias</a></li>
+                            <li class="nav-item active"><a class="nav-link">Categorias</a></li>
                             <div class="dropdown-content">
-                                <a href="anfibios.html">Anfíbios</a>
-                                <a href="aves.html">Aves</a>
-                                <a href="mamiferos.html">Mamíferos</a>
-                                <a href="repteis.html">Répteis</a>
+                                <a class="dropdown-item" href="anfibios.html">Anfíbios</a>
+                                <a class="dropdown-item">Aves</a>
+                                <a class="dropdown-item" href="mamiferos.html">Mamíferos</a>
+                                <a class="dropdown-item" href="repteis.html">Répteis</a>
                             </div>
                         </div>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
+                        <li class="nav-item active"><a class="nav-link">Sobre</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contato.html">Contato</a></li>
                     </ul>
-                </nav>
-                <section></section>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main class="principal">
         <section class="container2 col-information">
