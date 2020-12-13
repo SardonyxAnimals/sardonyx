@@ -70,3 +70,6 @@
 .form-contato-botao:hover {
     opacity: 1;
 }
+.btn{
+    margin: 0 auto 10px auto;
+}

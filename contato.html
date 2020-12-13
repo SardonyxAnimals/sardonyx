@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato | Sardonyx</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/contato.css" />
     <link rel="icon" type="image/ico" href="img/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -54,7 +56,8 @@
                 <input id="email_id" type="email" class="form-contato-input" name="email" placeholder="Email" required />
                 <input type="tel" class="form-contato-input" maxlength="9" name="tel" placeholder="Telefone" />
                 <textarea id="msg_id" class="form-contato-area" name="conteudo" placeholder="Mensagem..." required></textarea>
-                <button type="submit" class="form-contato-botao" onclick="validacao()">Enviar</button>
+                <!--Botão personalizado com Bootstrap-->
+                <button type="submit" class="btn btn-secondary btn-lg" onclick="validacao()">Enviar</button>
             </form>
         </div>
 
